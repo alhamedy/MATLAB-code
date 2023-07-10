@@ -1,0 +1,5 @@
+a=xlsread('Node-ID.xlsx')// the identification of the node in the Excel file
+f=readfis('fuzzy-logic-file-name.fis')
+for i =1:n //n is the number of prediction value rows
+    a(i,m) = evalfis([a(i,1) a(i,2)],f) //m is the number of columns in the fuzzy logic file. 
+end
